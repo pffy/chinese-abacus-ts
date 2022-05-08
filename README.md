@@ -3,6 +3,8 @@ Chinese Abacus object implemented in TypeScript
 
 # INSTALL
 
+Add to your development project using:
+
 ```bash
 $ npm i -D github:pffy/chinese-abacus-ts
 ```
