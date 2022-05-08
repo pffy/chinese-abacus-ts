@@ -1,0 +1,27 @@
+{
+  "name": "chinese-abacus-ts",
+  "version": "0.1.0",
+  "description": "TypeScript implementation of the ChineseAbacus object",
+  "main": "./obj.js",
+  "scripts": {
+    "build": "tsc *.ts",
+    "pretest": "npm run build",
+    "test": "node tests/test1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pffy/chinese-abacus-ts.git"
+  },
+  "keywords": [
+    "chinese-number",
+    "chinese-abacus",
+    "abacus",
+    "place-values"
+  ],
+  "author": "The Pffy Authors (https://pffy.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pffy/chinese-abacus-ts/issues"
+  },
+  "homepage": "https://github.com/pffy/chinese-abacus-ts#readme"
+}
