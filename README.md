@@ -50,14 +50,13 @@ const abba = new ChineseAbacus(1234567890);
 console.log(abba);
 /*
 ChineseAbacus {
-  maxValue: 999999999999,
-  value: 555555,
-  hundredMillions: 0,
-  tenThousands: 55,
-  thousands: 5,
-  hundreds: 5,
-  tens: 5,
-  ones: 5
+  value: 1234567890,
+  hundredMillions: 12,
+  tenThousands: 3456,
+  thousands: 7,
+  hundreds: 8,
+  tens: 9,
+  ones: 0
 }
 */
 ```
@@ -66,7 +65,7 @@ Convenient JSON string representation:
 ```javascript
 console.log('' + abba);
 /*
-{"value":555555,"hundredMillions":0,"tenThousands":55,"thousands":5,"hundreds":5,"tens":5,"ones":5}
+{"value":1234567890,"hundredMillions":12,"tenThousands":3456,"thousands":7,"hundreds":8,"tens":9,"ones":0}
 */
 ```
 
@@ -93,9 +92,9 @@ From the JSON data, you can get individual place values, if needed:
 ```javascript
 // 3456
 console.log(abba.getJSON().tenThousands);
-// 129
+// 12
 console.log(abba.getJSON().hundredMillions);
-// 0
+// 7
 console.log(abba.getJSON().thousands);
 ```
 
@@ -103,19 +102,19 @@ Here are more useful functions.
 
 An array of place values:
 ```javascript
-// [ 129, 3456, 0, 8, 0, 7 ]
+// [ 12, 3456, 7, 8, 9, 0 ]
 console.log('' + abba.getPlaceValues());
 ```
 
 An array of place value bits:
 ```javascript
-// [ true, true, false, true, false, true ]
+// [ true, true, true, true, true, false ]
 console.log('' + abba.getBitArray());
 ```
 
 A string of place value bits:
 ```javascript
-// 110101
+// 111110
 console.log('' + abba.getBitString());
 ```
 
